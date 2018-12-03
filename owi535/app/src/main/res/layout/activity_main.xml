@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#59816e">
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectar"
+        android:id="@+id/coneccion"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#5dd539" />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnMotor1A"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/flecha1"
+        android:contextClickable="false"
+        android:clickable="false"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/coneccion"
+        android:layout_toStartOf="@+id/coneccion"
+        android:layout_marginTop="17dp" />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnMotor1B"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:background="@drawable/flecha2"
+        android:layout_alignTop="@+id/btnMotor1A"
+        android:layout_alignLeft="@+id/btnMotor2B"
+        android:layout_alignStart="@+id/btnMotor2B" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnMotor2A"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/flecha1"
+        android:contextClickable="true"
+        android:clickable="false"
+        android:layout_above="@+id/btnMotor3A"
+        android:layout_alignLeft="@+id/btnMotor3A"
+        android:layout_alignStart="@+id/btnMotor3A"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnMotor3A"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/flecha1"
+        android:contextClickable="true"
+        android:clickable="true"
+        android:layout_above="@+id/btnMotor4A"
+        android:layout_toLeftOf="@+id/coneccion"
+        android:layout_toStartOf="@+id/coneccion"
+        android:layout_marginBottom="17dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnMotor2B"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false"
+        android:contextClickable="true"
+        android:background="@drawable/flecha2"
+        android:layout_alignBottom="@+id/btnMotor2A"
+        android:layout_toRightOf="@+id/coneccion"
+        android:layout_toEndOf="@+id/coneccion" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnMotor3B"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:background="@drawable/flecha2"
+        android:layout_alignBottom="@+id/btnMotor3A"
+        android:layout_alignLeft="@+id/btnMotor2B"
+        android:layout_alignStart="@+id/btnMotor2B" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnMotor4A"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/flecha1"
+        android:contextClickable="true"
+        android:clickable="true"
+        android:layout_above="@+id/coneccion"
+        android:layout_toLeftOf="@+id/coneccion"
+        android:layout_toStartOf="@+id/coneccion" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnMotor4B"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:contextClickable="false"
+        android:background="@drawable/flecha2"
+        android:layout_alignTop="@+id/btnMotor4A"
+        android:layout_toRightOf="@+id/coneccion"
+        android:layout_toEndOf="@+id/coneccion" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btnMotor5A"
+        android:layout_above="@+id/coneccion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/prueba"
+        android:background="#59816e" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btnMotor5B"
+        android:layout_alignTop="@+id/btnMotor5A"
+        android:layout_toRightOf="@+id/btnMotor5A"
+        android:layout_toEndOf="@+id/btnMotor5A"
+        android:src="@drawable/prueba2"
+        android:background="#59816e" />
+
+    <ImageButton
+        android:layout_width="65dp"
+        android:layout_height="90dp"
+        android:id="@+id/btnMotor6A"
+        android:src="@drawable/pl1"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:background="#59816e"
+        android:layout_above="@+id/coneccion"
+        android:layout_toRightOf="@+id/btnMotor3B"
+        android:layout_toEndOf="@+id/btnMotor3B" />
+
+    <ImageButton
+        android:layout_width="65dp"
+        android:layout_height="90dp"
+        android:id="@+id/btnMotor6B"
+        android:src="@drawable/pl2"
+        android:background="#59816e"
+        android:layout_below="@+id/btnMotor3B"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="    M1"
+        android:id="@+id/textView"
+        android:textColor="#ce0a0a"
+        android:layout_alignBottom="@+id/btnMotor1B"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="    M2"
+        android:id="@+id/textView2"
+        android:textColor="#ce0a0a"
+        android:layout_alignTop="@+id/btnMotor2A"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="    M3"
+        android:id="@+id/textView3"
+        android:textColor="#ce0a0a"
+        android:layout_below="@+id/btnMotor2A"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="    M4"
+        android:id="@+id/textView4"
+        android:textColor="#ce0a0a"
+        android:layout_below="@+id/btnMotor3A"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="    R"
+        android:id="@+id/textView5"
+        android:textColor="#ce0a0a"
+        android:layout_alignTop="@+id/btnMotor3B"
+        android:layout_alignRight="@+id/btnMotor6B"
+        android:layout_alignEnd="@+id/btnMotor6B" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="  A"
+        android:id="@+id/textView6"
+        android:textColor="#ce0a0a"
+        android:layout_below="@+id/btnMotor2A"
+        android:layout_alignRight="@+id/btnMotor6A"
+        android:layout_alignEnd="@+id/btnMotor6A" />
+
+</RelativeLayout>
